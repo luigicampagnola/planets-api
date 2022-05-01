@@ -11,7 +11,7 @@ const app = express();
 //middlewares
 app.use(
   cors({
-    origin: "http://localhost:3000", // we pass as an object our origin
+    origin: "http://localhost:3000", // we pass as an object our origin white list to accept req
   })
 );
 app.use(express.json());
